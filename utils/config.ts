@@ -23,7 +23,6 @@ export const ALCHEMY_RPC_KEY_ROPSTEN =
   process.env.NEXT_PUBLIC_ALCHEMY_RPC_KEY_KOVAN;
 export const ALCHEMY_RPC_URL_ROPSTEN_HTTP = `https://eth-ropsten.alchemyapi.io/v2/${ALCHEMY_RPC_KEY_ROPSTEN}`;
 
-export const RPC_POLLING_INTERVAL = 8000;
 export const RPC_URLS = {
   1: ALCHEMY_RPC_URL_MAINNET_HTTP,
   42: ALCHEMY_RPC_URL_KOVAN_HTTP,

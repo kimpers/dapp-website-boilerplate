@@ -2,7 +2,6 @@ import { InjectedConnector } from '@web3-react/injected-connector';
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector';
 import { WalletLinkConnector } from '@web3-react/walletlink-connector';
 import {
-  RPC_POLLING_INTERVAL,
   ALCHEMY_RPC_URL_MAINNET_HTTP,
   WEB3_APP_DISPLAY_NAME,
   SUPPORTED_CHAIN_IDS,
@@ -25,7 +24,6 @@ const newWalletConnect = () =>
     rpc: { 1: ALCHEMY_RPC_URL_MAINNET_HTTP },
     bridge: 'https://bridge.walletconnect.org',
     qrcode: true,
-    pollingInterval: RPC_POLLING_INTERVAL,
   });
 export let walletconnect = newWalletConnect();
 export const resetWalletConnect = () => {
